@@ -1,9 +1,11 @@
 import requests
 import json
+import os
+
 querystring = {"fragment":"true","json":"true"}
 
 headers = {
-    'x-rapidapi-key': "e012d59038msh17ee95930b32c9cp1afd7bjsn54e24c8fcbf9",
+    'x-rapidapi-key': os.getenv('NUMBERS_API_KEY'),
     'x-rapidapi-host': "numbersapi.p.rapidapi.com"
     }
 
